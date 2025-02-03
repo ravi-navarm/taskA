@@ -1,0 +1,196 @@
+*{
+ 
+font-family: sans-serif;
+
+}
+nav{
+    
+    background-color:white;
+    padding: 5px;
+ }
+ li{
+    margin-left: 260px;
+    list-style-type: none;
+    
+ }
+ 
+
+
+li>h1{
+    color: #424242;
+}
+span{
+    color: #00A5EC;
+}
+
+.container{
+    
+    background-color:#f7f7f7;
+}
+a{
+    text-decoration: none;
+    color:  #00A5EC;;
+}
+.img1{
+    width: 40px;
+height: 40px;
+}
+
+h4{
+    color: #424242;
+}
+.add{
+    display: flex;
+     justify-content: flex-end;
+     gap:3px;
+     
+     padding-bottom: 15px;
+ }
+ .btn{
+    display: flex;
+    gap: 5px;
+    margin-right: 260px;
+    border: none;
+    background: #f7f7f7;
+    cursor: pointer;
+    padding: 20px;
+    margin-top:5px
+}
+ .button-content{
+    display: flex; /* Use flexbox for alignment */
+    align-items: center;
+    gap: 10px;
+   
+}
+.cards,.lastrow{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-left: 250px;
+    }
+    .card1,.card2{
+        background-color: white;
+        width: 250px;
+        height:300px;
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+      /*we can also use grid*/
+    }
+
+/*modifying horizontal line <hr>*/
+.hr1{
+    opacity: 0.4;
+}
+.line{
+   color: rgb(255, 254, 254);
+   
+   width: 248px;
+   margin-left:-20px;
+}
+hr{
+    opacity: 0.4;
+}
+/*for input checkbox and label shopping to align them correctly*/
+.inline{
+    display:flex;
+    align-items: center;
+    gap: 3px;
+ }
+input:checked{
+    accent-color: #c2c2c2;
+     opacity: 0.3;
+     filter: invert(1); 
+   }
+  
+  input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    opacity: 0.2;
+    margin-right: 5px;
+   
+  }
+  label{
+   
+    color: #424242;
+}
+ 
+
+
+
+
+.card1>h3,.card2>h3{
+    color: #00A5EC;
+}
+
+
+
+
+
+
+/* ket linethrough because the strikes for certain texts are different */
+
+.linethrough1{
+    position: relative;
+    display: inline-block;
+    color: #c2c2c2;
+ }
+ .linethrough1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 95px;
+    height: 2px;
+    background-color: #c2c2c2;
+    top: 7px;
+ }
+
+
+ .linethrough2{
+    
+    position: relative;/*parent */
+  display: inline-block; /* its make sure that the elements wrap around the content only */
+  color: #c2c2c2;
+ 
+   
+ 
+}
+/*Draws a gray horizontal line across the text (acting as a strikethrough) */
+  .linethrough2::after {
+    content: "";
+    position: absolute; /*child */
+    display: block;
+    width: 140px; /* width of the line*/
+    height: 2px; /*Thickness of the line */
+    background-color: #c2c2c2;
+    top: 7px;
+    
+  }  
+  
+  
+ .linethrough3{
+    position: relative;
+    display: inline-block;
+    color: #c2c2c2;
+ }
+
+ .linethrough3::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 121px;
+    height: 2px;
+    background-color: #c2c2c2;
+    top: 7px;
+    
+ }
+
+ 
+ .card1:hover,.card2:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+ }
+ 
+.bigdiv{
+    background-color: #f7f7f7;
+    height: 1000px;
+}
